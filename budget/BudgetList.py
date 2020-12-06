@@ -40,7 +40,7 @@ def main():
     expenses = Expense.Expenses()
     # To execute the file on my local machine I need to use the following path instead of data/spending_data.csv
     # '/Users/pawelwalenda/PycharmProjects/python-collections-budget/data/spending_data.csv'
-    expenses.read_expenses('data/spending_data.csv')
+    expenses.read_expenses('/Users/pawelwalenda/PycharmProjects/python-collections-budget/data/spending_data.csv')
 
     for expense in expenses.list:
         myBudgetList.append(expense.amount)
